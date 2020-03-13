@@ -15,4 +15,19 @@ class PersonTableViewCell: UITableViewCell {
     @IBOutlet var genderLabel: UILabel!
     @IBOutlet var yearLabel: UILabel!
     
+    // MARK: - Properties
+    var person: Person? {
+        didSet {
+            updateViews()
+        }
+    }
+    
+    // MARK: - Functions
+    private func updateViews() {
+        guard let person = person else { return }
+        
+        nameLabel.text = person.name
+        genderLabel.text = person.gender
+        yearLabel.text = person.birthYear
+    }
 }
