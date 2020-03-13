@@ -10,6 +10,8 @@ import UIKit
 
 class PersonSearchTableViewController: UITableViewController {
 
+    // MARK: - IBOutlet
+    @IBOutlet var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()

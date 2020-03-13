@@ -14,9 +14,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="G5b-Jz-iZy">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" id="1ZR-7d-mXG" customClass="PersonTableViewCell" customModule="FindACrew" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="99.5"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="99.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1ZR-7d-mXG" id="tIp-WK-GrR">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
@@ -88,6 +93,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Find a Crew" id="AsQ-Tc-StP"/>
+                    <connections>
+                        <outlet property="searchBar" destination="G5b-Jz-iZy" id="s7d-mg-Kv8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="via-re-KKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
